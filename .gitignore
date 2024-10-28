@@ -1,0 +1,30 @@
+# MkDocs build directory
+/site/
+
+# MkDocs configuration files
+*.lock
+
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Local IDE configurations
+.vscode/
+.idea/

@@ -1,0 +1,13 @@
+site_name: Learn Java
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - java
+    - json
+nav:
+  - Welcome: index.md
+  - "Step 0: Setup": setup.md
+  - "Step 1: First Line of Code": print.md
+  - "Step 2: Variables and Arithmetic": arithmetic.md
