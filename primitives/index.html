@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Step 2: Variables and Arithmetic - Learn Java</title>
+    <title>Step 3: More Primitives - Learn Java</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Step 2: Variables and Arithmetic";
+        var mkdocs_page_name = "Step 3: More Primitives";
         var mkdocs_page_input_path = "primitives.md";
         var mkdocs_page_url = null;
       </script>
@@ -58,6 +58,20 @@
                 <li class="toctree-l1"><a class="reference internal" href="../arithmetic/">Step 2: Variables and Arithmetic</a>
                 </li>
               </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Step 3: More Primitives</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#step-31">Step 3.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-32">Step 3.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-33">Step 3.3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-34">Step 3.4</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
       </div>
     </div>
     </nav>
@@ -72,7 +86,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Step 2: Variables and Arithmetic</li>
+      <li class="breadcrumb-item active">Step 3: More Primitives</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -81,18 +95,128 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="step-2-variables-and-arithmetic">Step 2: Variables and Arithmetic</h1>
-<h2 id="21-first-operation">2.1: First Operation</h2>
-<p>First, given variables <code>damage</code> and <code>number_of_hits</code>, print the total damage dealt.</p>
-<h2 id="22-more-operations">2.2: More Operations</h2>
-<p>Next, given variables <code>opponent_health</code>, <code>opponent_damage</code>, <code>opponent_shield</code>, <code>player_health</code>, <code>player_damage</code>, and <code>player_shield</code>, calculate the damage dealt by the opponent on the player. Damage dealt is calculated as <code>damage - shield</code>. Store the damage dealt in a variable called <code>damage_dealt</code>. Subtract this damage from the player's health and print their new health to console.</p>
-<h2 id="23-integer-division">2.3: Integer Division</h2>
-<p>Calculate the number of hits it will take to defeat the opponent. You may NOT use any imports. Use casting and integer division.</p>
-<h2 id="24-update-a-variable">2.4: Update a variable</h2>
-<p>You received a powerbuff! Increase the player's damage by 30%. Then, calculate the opponent's new health if the player deals a hit.</p>
+                <h1 id="step-3-more-primitives">Step 3: More Primitives</h1>
+<h2 id="step-31">Step 3.1</h2>
+<p>Given <code>opponent_health</code>, determine if the opponent is dead. Store this value in a boolean variable called <code>opponent_alive</code>.
+Print this value to console.
+Set <code>opponent_health</code> to 0. Recalculate <code>opponent_alive</code>.
+Print this new value to console.</p>
+<pre><code class="language-java">/** Main.java */
+
+public class Main {
+
+  public static void main(String[] args) {
+    /** Steps 1 - 2 Code goes here */
+
+    /** Step 3.1 */
+    // TODO: Set a boolean variable called opponent_alive. Print to console.
+    // TODO: Set opponent_health to 0. Recalculate opponent_alive. Print to console.
+  }
+
+}
+</code></pre>
+<details>
+  <summary>Expect Output</summary>
+
+  <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
+
+  true <br>
+  false
+
+  </div>
+</details>
+<p><br></p>
+<h2 id="step-32">Step 3.2</h2>
+<p>Given a new opponent with <code>opponent2_health</code>, print if there is any enemy alive. Use the <code>or</code> operator.</p>
+<pre><code class="language-java">/** Main.java */
+
+public class Main {
+
+  public static void main(String[] args) {
+    /** Steps 1 - 3.1 Code goes here */
+
+    /** Step 3.2 */
+    double opponent2_health = (((15 + 25) * 5 / (25 - 15)) - (5 * 3) + (5 / 3) + ((25 - 5) * 3 / (3 + 5) * 2) - ((25 * 5 / (3 + 5)) - (15 * 25 / (15 + 25)) + (3 * 3) % (5 * 3))) + (((15 + 25) * 5 / (25 - 15)) - (5 * 3) + (5 / 3) * 0 - 10);
+    // TODO: Determine if this opponent is dead using code. Then, print whether there is any enemy alive. Use the 'or' operator.
+  }
+
+}
+</code></pre>
+<details>
+  <summary>Expect Output</summary>
+
+  <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
+
+  false
+
+  </div>
+</details>
+<p><br></p>
+<h2 id="step-33">Step 3.3</h2>
+<p>Given a third opponent with <code>opponent3_health</code>, print to console whether all opponents are dead. Use the <code>not</code> and the <code>and</code> operators.</p>
+<pre><code class="language-java">/** Main.java */
+
+public class Main {
+
+  public static void main(String[] args) {
+    /** Steps 1 - 3.2 Code goes here */
+
+    /** Step 3.3 */
+    double opponent3_health = (((7 * 3) + (5 * 2) - (4 / 2) + (6 % 5)) - (2 * 1) + (8 - 8) * (9 / 3)) - ((12 / 3) * 2 - (15 - 10) * (2 - 2) + (3 * 1) % (7 - 5));
+    // TODO: Determine if this opponent is dead using code. Print the result to console. Then, print if all enemies are dead. Use 'and' and 'not' operators.
+  }
+
+}
+</code></pre>
+<details>
+  <summary>Expect Output</summary>
+
+  <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
+
+  false
+
+  </div>
+</details>
+<p><br></p>
+<h2 id="step-34">Step 3.4</h2>
+<p>Create a char variable called <code>opponent_tier</code>. Set this variable to 'B'. </p>
+<p>The enemy has grown stronger! Increment this variable and print to console. Does that make sense?
+Try subtracting 2 from the variable and printing it to console. Given what the previous change, does this make more sense what might be going on?
+Lastly, to confuse you just a little bit more, subtract 1 more and print to console. Find why this is the output.</p>
+<pre><code class="language-java">/** Main.java */
+
+public class Main {
+
+  public static void main(String[] args) {
+    /** Steps 1 - 3.3 Code goes here */
+
+    /** Step 3.4 */
+    // TODO: Create a char variable called opponent_tier which is set to 'B'.
+    // TODO: Increment the variable and print to console.
+    // TODO: Subtract 2 from the variable and print to console.
+    // TODO: Subtract 1 more from the variable and print to console.
+  }
+
+}
+</code></pre>
+<details>
+  <summary>Expect Output</summary>
+
+  <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
+
+  C <br>
+  A <br>
+  @
+
+  </div>
+</details>
+<p><br></p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../arithmetic/" class="btn btn-neutral float-left" title="Step 2: Variables and Arithmetic"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
 
   <hr/>
 
@@ -113,6 +237,8 @@
   <div class="rst-versions" role="note" aria-label="Versions">
   <span class="rst-current-version" data-toggle="rst-current-version">
     
+    
+      <span><a href="../arithmetic/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
   </span>
