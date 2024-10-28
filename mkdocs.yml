@@ -12,3 +12,5 @@ nav:
   - "Step 1: First Line of Code": print.md
   - "Step 2: Variables and Arithmetic": arithmetic.md
   - "Step 3: More Primitives": primitives.md
+  - "Step 4: Control Flow 1": control-flow.md
+  - "Step 5: Control Flow 2": control-flow2.md

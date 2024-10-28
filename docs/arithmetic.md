@@ -65,7 +65,7 @@ public class Main {
   <summary>Expect Output</summary>
 
   <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
-  35
+  35.0
   </div>
 </details>
 <br>
@@ -93,7 +93,7 @@ public class Main {
   <summary>Expected Output</summary>
 
   <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
-  14
+  13
   </div>
 </details>
 <br>
@@ -121,7 +121,7 @@ public class Main {
   <summary>Expected Output</summary>
 
   <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
-  43
+  43.0
   </div>
 </details>
 <br>
