@@ -11,3 +11,4 @@ nav:
   - "Step 0: Setup": setup.md
   - "Step 1: First Line of Code": print.md
   - "Step 2: Variables and Arithmetic": arithmetic.md
+  - "Step 3: More Primitives": primitives.md

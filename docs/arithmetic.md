@@ -27,7 +27,7 @@ public class Main {
 
   <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
     
-  12 (if using int)
+  12 (if using int) <br>
   7.5 (if using double)
 
   </div>
