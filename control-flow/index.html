@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Step 2: Variables and Arithmetic - Learn Java</title>
+    <title>Step 4: Control Flow 1 - Learn Java</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Step 2: Variables and Arithmetic";
-        var mkdocs_page_input_path = "arithmetic.md";
+        var mkdocs_page_name = "Step 4: Control Flow 1";
+        var mkdocs_page_input_path = "control-flow.md";
         var mkdocs_page_url = null;
       </script>
     
@@ -54,26 +54,26 @@
                 <li class="toctree-l1"><a class="reference internal" href="../print/">Step 1: First Line of Code</a>
                 </li>
               </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">Step 2: Variables and Arithmetic</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#21-first-operation">2.1: First Operation</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#22-more-operations">2.2: More Operations</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#23-integer-division">2.3: Integer Division</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#24-update-a-variable">2.4: Update a variable</a>
-    </li>
-    </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../arithmetic/">Step 2: Variables and Arithmetic</a>
                 </li>
               </ul>
               <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../primitives/">Step 3: More Primitives</a>
                 </li>
               </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../control-flow/">Step 4: Control Flow 1</a>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Step 4: Control Flow 1</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#step-41">Step 4.1</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-42">Step 4.2</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-43">Step 4.3</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#step-44">Step 4.4</a>
+    </li>
+    </ul>
                 </li>
               </ul>
               <ul>
@@ -94,7 +94,7 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">Step 2: Variables and Arithmetic</li>
+      <li class="breadcrumb-item active">Step 4: Control Flow 1</li>
     <li class="wy-breadcrumbs-aside">
     </li>
   </ul>
@@ -103,22 +103,18 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="step-2-variables-and-arithmetic">Step 2: Variables and Arithmetic</h1>
-<h2 id="21-first-operation">2.1: First Operation</h2>
-<p>First, given variables <code>damage</code> and <code>number_of_hits</code>, print the total damage dealt.</p>
+                <h1 id="step-4-control-flow-1">Step 4: Control Flow 1</h1>
+<h2 id="step-41">Step 4.1</h2>
+<p>Let's start writing some actual logic in our code. Write an if statement where if at least one enemy is dead, then it prints <code>An enemy is dead</code> to console.</p>
 <pre><code class="language-java">/** Main.java */
 
 public class Main {
 
   public static void main(String[] args) {
-    /** Step 1 Code goes here */
+    /** Steps 1 - 3 Code goes here */
 
-    /** Step 2.1 */
-    int damage = 4; // Comment this line when using the next line
-    // double damage = 2.5; // Uncomment this line to try it with a decimal
-    int number_of_hits = 3;
-
-    // TODO Print the total damage dealt
+    /** Step 4.1 */
+    // TODO: Implement 4.1 here
   }
 
 }
@@ -127,33 +123,21 @@ public class Main {
   <summary>Expect Output</summary>
 
   <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
-
-  12 (if using int) <br>
-  7.5 (if using double)
-
+  An enemy is dead
   </div>
 </details>
 <p><br></p>
-<h2 id="22-more-operations">2.2: More Operations</h2>
-<p>Next, given variables <code>opponent_health</code>, <code>opponent_damage</code>, <code>opponent_shield</code>, <code>player_health</code>, <code>player_damage</code>, and <code>player_shield</code>, calculate the damage dealt by the opponent on the player. Damage dealt is calculated as <code>damage - shield</code>. Store the damage dealt in a variable called <code>damage_dealt</code>. Subtract this damage from the player's health and print their new health to console.</p>
+<h2 id="step-42">Step 4.2</h2>
+<p>Next, let's check if a specific enemy, enemy 2, is dead. If it has less than or equal to 0 health, then print that <code>Enemy 2 has died</code>.</p>
 <pre><code class="language-java">/** Main.java */
 
 public class Main {
 
   public static void main(String[] args) {
-    /** Step 1 &amp; 2.1 Code goes here */
-    // TODO: Print a Welcome Message Here
+    /** Steps 1 - 4.1 Code goes here */
 
-    /** Step 2.2 */
-    double player_health = 40;
-    int player_damage = 10;
-    int player_shield = 3;
-    double opponent_health = 50;
-    int opponent_damage = 8;
-    int opponent_shield = 6;
-
-    int damage_dealt = 0; // TODO: Calculate the damage dealt
-    // TODO: Subtract the damage from the player's health and print it to console
+    /** Step 4.2 */
+    // TODO: Implement 4.2 here
   }
 
 }
@@ -162,55 +146,61 @@ public class Main {
   <summary>Expect Output</summary>
 
   <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
-  35.0
+  Enemy 2 has died
   </div>
 </details>
 <p><br></p>
-<h2 id="23-integer-division">2.3: Integer Division</h2>
-<p>Calculate the number of hits it will take to defeat the opponent. You may NOT use any imports. Use casting and integer division.</p>
+<h2 id="step-43">Step 4.3</h2>
+<p>Let's check our own health. If it's above 35, print <code>Health is stable</code>. If it's less than 0, print <code>You have died.</code> Else print <code>Crtical Warning: Health is low</code>.</p>
 <pre><code class="language-java">/** Main.java */
 
 public class Main {
 
   public static void main(String[] args) {
-    /** Step 1, 2.1 &amp; 2.2 Code goes here */
+    /** Steps 1 - 4.2 Code goes here */
 
-    /** Step 2.3 */
-    // TODO: Calculate and print the number of hits needed to defeat the opponent. Do NOT use any imports.
+    /** Step 4.3 */
+    // TODO: Implement 4.3 here
   }
 
 }
-
 </code></pre>
 <details>
-  <summary>Expected Output</summary>
+  <summary>Expect Output</summary>
 
   <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
-  13
+  Crtical Warning: Health is low
   </div>
 </details>
 <p><br></p>
-<h2 id="24-update-a-variable">2.4: Update a variable</h2>
-<p>You received a powerbuff! Increase the player's damage by 30%. Then, calculate the opponent's new health if the player deals a hit.</p>
+<h2 id="step-44">Step 4.4</h2>
+<p>Now try a new control method, a switch statement. Given an action (char), use a Switch statement to print the full name of the action.</p>
+<ul>
+<li>A: Attack</li>
+<li>S: Strengthen</li>
+<li>W: Weaken</li>
+<li>H: Heal</li>
+<li>Otherwise print Invalid</li>
+</ul>
 <pre><code class="language-java">/** Main.java */
 
 public class Main {
 
   public static void main(String[] args) {
-    /** Step 1, 2.1, 2.2 &amp; 2.3 Code goes here */
+    /** Steps 1 - 4.3 Code goes here */
 
-    /** Step 2.4 */
-    // TODO: Increase the player's damage by 30%. Only use multiplication.
-    // TODO: Calculate and print the opponent's new health after the player deals a hit
+    /** Step 4.4 */
+    char action = ((10 * 10) - (2 * 5) + (4 * 3) - 2) + (15 - 12 - 4 * 4);
+    // TODO: Implement 4.4 here
   }
 
 }
 </code></pre>
 <details>
-  <summary>Expected Output</summary>
+  <summary>Expect Output</summary>
 
   <div style="border: 1px solid #ddd; padding: 10px; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9;">
-  43.0
+  Weaken
   </div>
 </details>
 <p><br></p>
@@ -218,8 +208,8 @@ public class Main {
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../print/" class="btn btn-neutral float-left" title="Step 1: First Line of Code"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../primitives/" class="btn btn-neutral float-right" title="Step 3: More Primitives">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../primitives/" class="btn btn-neutral float-left" title="Step 3: More Primitives"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../control-flow2/" class="btn btn-neutral float-right" title="Step 5: Control Flow 2">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -242,10 +232,10 @@ public class Main {
   <span class="rst-current-version" data-toggle="rst-current-version">
     
     
-      <span><a href="../print/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../primitives/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../primitives/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../control-flow2/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
