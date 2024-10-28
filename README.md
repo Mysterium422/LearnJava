@@ -1,2 +1,2 @@
 See website here:
-mysterium422.github.io/LearnJava
+https://mysterium422.github.io/LearnJava
