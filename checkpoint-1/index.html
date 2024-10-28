@@ -114,33 +114,25 @@
 <p>1) Define the variables. You'll need a health, damage, and defense stat for both the player and the enemy/opponent. There'll be other variables necessary later on as well.</p>
 <p>2) Until either you or the enemy is dead, repeat rounds over and over again. Each round has the following:</p>
 <ul>
-<li>First, print <code>beginning round i</code> where i is the round # (starts at 1)</li>
+<li>First, print <code>beginning round i</code> where i is the round # (starts at 1).</li>
 <li>Next, the player performs an action by typing the first letter of their desired action. If the letter typed is invalid, print that and wait for a new action.</li>
 <li>Print the selected action to the console.</li>
-<li>Perform the action. Here are the actions:</li>
-<li>Attack: Deal damage to the enemy</li>
-<li>Strengthen: Increase your damage by 10%</li>
-<li>Weaken: Decrease your enemy's defense and damage by 10%. Only has a 50% chance of working</li>
-<li>
-<p>Heal: Heal to full health. This can only be done once. If tried again, the ability fails and the turn is skipped saying that <code>the ability failed</code>.</p>
+<li>Perform the action. Here are the actions:<ul>
+<li>Attack: Deal damage to the enemy.</li>
+<li>Strengthen: Increase your damage by 10%.</li>
+<li>Weaken: Decrease your enemy's defense and damage by 10%. Only has a 50% chance of working.</li>
+<li>Heal: Heal to full health. This can only be done once. If tried again, the ability fails and the turn is skipped saying that <code>the ability failed</code>.</li>
+</ul>
 </li>
-<li>
-<p>If the opponent is dead, write a game over message and stop the program. Print the player's remaining health.</p>
+<li>If the opponent is dead, write a game over message and stop the program. Print the player's remaining health.</li>
+<li>Select a random action for the opponent to perform. Here are their actions:<ul>
+<li>Attack (60%): Deal damage to the player.</li>
+<li>Harden (20%): Increase defense by 5.</li>
+<li>Poison (20%): Deal damage / 2 to the player for the next 6 turns. Player defense does not apply. If the player is already poisoned, the bot should only try to Attack and Harden with the renormalized probabilities.</li>
+</ul>
 </li>
-<li>
-<p>Select a random action for the opponent to perform. Here are their actions:</p>
-</li>
-<li>Attack (60%): Deal damage to the player</li>
-<li>Harden (20%): Increase defense by 5</li>
-<li>
-<p>Poison (20%): Deal damage / 2 to the player for the next 6 turns. Player defense does not apply. If the player is already poisoned, the bot should only try to Attack and Harden with the renormalized probabilities.</p>
-</li>
-<li>
-<p>If the player is dead, write a you win message and stop the program. Print the opponent's remaining health</p>
-</li>
-<li>
-<p>Print the player's health, damage, defense, and poison status. Print the opponent's health.</p>
-</li>
+<li>If the player is dead, write a you win message and stop the program. Print the opponent's remaining health.</li>
+<li>Print the player's health, damage, defense, and poison status. Print the opponent's health.</li>
 </ul>
               
             </div>
